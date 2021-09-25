@@ -2,4 +2,4 @@
 
 To clone this repo, use the following command:
 
-`git clone --recurse-submodules https://bitbucket.org/LBL_TBI/autoct.git`
+`git clone --recurse-submodules https://github.com/medtech-berkeley/tbi-cts`
