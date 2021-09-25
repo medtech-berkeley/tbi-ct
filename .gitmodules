@@ -1,0 +1,3 @@
+[submodule "autoct"]
+	path = autoct
+	url = https://bitbucket.org/LBL_TBI/autoct.git
