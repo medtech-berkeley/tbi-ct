@@ -12,5 +12,10 @@ args = parser.parse_args()
 container_name = 'autoct' + str(random.randrange(1, 1000, 1))
 datafile = str(args.file) + ':/data'
 
-docker_run = ['docker', 'run', '--rm', '--name', container_name, '-v', datafile, '-it', 'autoct:1.1', '/bin/bash']
+docker_run = ['docker', 'run', '--name', container_name, '-v', datafile, '-it', 'autoct:1.1', '/bin/bash']
 subprocess.run(docker_run, shell = True)
+
+subprocess.run(['echo', 'Hello!'], shell = True)
+
+# docker_echo_test = ['docker', 'exec', '-d', container_name, 'echo', 'Hello world!']
+# subprocess.run(docker_echo_test, shell = True)
